@@ -1,0 +1,28 @@
+<form class="row">
+  <div class="form-group">
+    <label>Ingrese Numero 1:</label>
+    <input
+      type="number"
+      class="form-control"
+      placeholder="Escribe el numero uno"
+      [(ngModel)]='numeroUno' [ngModelOptions]="{standalone: true}"
+    />
+  </div>
+  <div class="form-group">
+    <label>Ingrese Numero 2:</label>
+    <input
+      type="number"
+      class="form-control"
+      placeholder="Escribe el numero dos" 
+      [(ngModel)]='numeroDos' [ngModelOptions]="{standalone: true}"
+    />
+  </div>
+  <div class="form-group">
+  <button
+    class="btn btn-primary"
+    (click)="sumar(numeroUno, numeroDos)"
+  >
+    Sumar
+  </button>
+  </div>
+</form>
