@@ -1,0 +1,16 @@
+<div class="container">
+    <!--<div class="row">
+        <div class="col">
+            <h1>Calculadora</h1>-->
+            <h1>{{ titulo }}</h1>
+            <app-formulario (calculoResultado) = "resultadoCalculado($event)">
+
+            </app-formulario>
+             
+            <app-resultado *ngIf="mostrar" [total] = total>
+
+            </app-resultado>
+            
+        <!--</div>
+    </div>-->
+</div>
